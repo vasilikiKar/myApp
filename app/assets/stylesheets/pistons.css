@@ -1,0 +1,7 @@
+.expanded-section {
+    display: none;
+}
+
+.expanded-section.expanded {
+    display: block;
+}

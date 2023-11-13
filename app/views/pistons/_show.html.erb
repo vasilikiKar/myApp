@@ -1,0 +1,8 @@
+<ul>
+  <% records.each do |record| %>
+    <li>
+      <%= link_to '#', class: 'show-details-link', 'data-bs-toggle': 'modal', 'data-bs-target': '#pistonsModal', 'data-record-id': record.id do %>
+        <%= record.engine_types %>, <%= record.vehicle %>, <%= record.model_year %> <%= record.fuel %> <%= record.cubic_displacement %> <%= record.cylinder_diameter %>      <% end %>
+    </li>
+  <% end %>
+</ul>

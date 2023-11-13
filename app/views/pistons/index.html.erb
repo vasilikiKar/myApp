@@ -1,0 +1,10 @@
+<h1>List of Engine Makers</h1>
+<ul>
+  <% @engine_makers.each do |option| %>
+    <li>
+      <%= link_to option, '#', class: 'expand-link', data: { value: option } %>
+      <div class="expanded-section" data-value="<%= option %>">
+      </div>
+    </li>
+  <% end %>
+</ul>
